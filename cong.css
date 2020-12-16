@@ -1,0 +1,37 @@
+
+body
+{
+	background: url(Untitled-19-1024x680.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+a
+{
+	color: yellow;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin-left: 30px;
+}
+
+.cong{
+	
+	background: rgba(44,62,80,0.7);
+	padding: 40px;
+	width: 240px;
+	position: absolute;
+    left: 28%;
+    right: 55%;
+    transform:translate(-50%,-50%);
+    
+	margin: 0 auto;
+	margin-top: 160px;
+	height: 200px;
+	margin-left: 180px;
+}
+
+form
+{
+
+	align:cover;
+}

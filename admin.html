@@ -1,0 +1,51 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Login page</title>
+	<link rel="stylesheet" type="text/css" href="admin.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Play">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <script type="text/javascript">
+		function validateForm(){
+			var o=document.getElementById('un').value;
+					var n=document.getElementById('pa').value;
+					if(o == "" || n == ""){
+                    	alert('Please fill all the details');
+                    }
+                     
+                    
+		}
+		function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+	</script> 
+	
+</head>
+<body>
+	 <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">Back</a>
+  <a href="#contact">Log Out</a>
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div class="login">
+<form method="">
+			<h2 style="color: white; font-family: arial; font-weight: bold; font-size: 30px;">Log In</h2><br><br>
+			<input type="text" name="username" placeholder="UserId" id="un" required/="text"> 
+			<input type="password" name="pass" placeholder="Password" id="pa" required/="password">    <br><br><br><br>
+		<a href=""> <input type="button"  name="Submit" value="LOG IN" onclick="validateForm()"> </a> <br><br>
+		
+	</form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+body
+{
+	font-family: Tahoma, Geneva, sans-serif;
+	color:#fff;
+	background: url(IMG_5909.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	}
+	.register
+{
+	background: rgba(44,62,80,0.7);
+	padding: 20px;
+	width: 30%;
+	 position: absolute;
+     left: 390px;
+	margin:auto;
+	margin-top: 80px;
+	height: 550px;
+	margin-left: 180px;	
+}
+
+form
+{
+     width:340px;
+     margin: 0 auto;     
+	text-align:center;
+
+}	
+input{
+	width: 240px;
+	text-align: center;
+	background: transparent;
+	border:none;
+	border-bottom: 1px solid #fff;
+	font-family: 'Play', sans-serif;
+	font-size: 16px;
+	font-weight: 200px;
+	padding: 10px 0;
+	transition: border 0.5s;
+	outline: none;
+	color: 	#7FFF00;
+}
+input[type=button]
+{
+	border:none;
+	width: 150px;
+	background: #d6ebad;
+	color: #8B4513;
+	font-size: 16px;
+	line-height: 25px;
+	padding: 10px 0;
+	border-radius: 20px;
+	cursor: pointer;
+}
+input[type=button]:hover
+{
+	color: #fff;
+	background-color: black;
+	transition: 0.6s;	
+	}
+h2
+{
+	color: white;
+}
+a{
+	color: yellow;
+	text-decoration: blink;
+}
+a:hover{
+	color:skyblue;
+}
+.container{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+
+}
+::placeholder{
+	color: aliceblue;
+	opacity: 0.8;
+}
+input[type=radio]
+{
+	max-width: 20px;
+	
+	}
+	#st{
+		max-width: 90px;
+
+	}
+	#br{
+		max-width: 90px;
+	}
+	#ph{
+		max-width: 48px;
+	}
+	#a1{
+		width: 200px;
+	}
+	#a2{
+		width: 200px;
+	}
+	
+	

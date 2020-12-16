@@ -1,0 +1,150 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ROOM BOOKING</title>
+	<link rel="stylesheet" href="room.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+</head>
+<body>
+	<!-- Side navigation -->
+<div class="sidenav"><pre>      </pre>
+  <a href="home2.html">Home</a>
+  <a href="status.html">Booking status</a>
+  <a href="available.html">Availability</a>
+  <a href="payment.html">Payment</a>
+  <a href="contact.html">Contact</a>
+  <a href="login.html">Log Out</a>
+</div>
+
+<!-- Page content -->
+<div class="main">
+  <h1>HOSTEL BOOKING</h1><hr>
+  <form action="">
+  <fieldset>
+  <legend><strong>Personal Details:</strong></legend>
+  <label for="name">NAME:</label>
+  <input type="text" name="name" id="name" required autofocus placeholder="Your Name" pattern="[a-zA-z]{3,}" title="Please enter in more than 3"/>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 
+  <label for="email">EMAIL:</label>
+  <input type="text" name="email" id="email" required placeholder="Your Email" pattern="[a-zA-z]{3,}@[a-zA-z]{3,}[.]{1}[a-zA-z]{2,}" title="Please enter in a valid email address">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; 
+  <label for="phone">Phone:</label>
+  <input type="tel" name="phone" id="phone" required placeholder="Please Enter ur Phone number" pattern="[0-9]{10}" title="Please enter phone Number here:"><br><br>
+  <label for="name">Father's Name:</label><input type="text" name="nam" id="nam" required placeholder="Father's name"  title="Please enter name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label for="name">Mother's Name:</label><input type="text" name="nam" id="mom" required placeholder="Mother's name"  title="Please enter name">
+</fieldset>
+<br>
+<fieldset>
+	
+  <legend><strong>Booking Details:</strong></legend>
+
+ <label for="date">Booking date:</label> &nbsp;&nbsp;&nbsp;<input type="date" name="date" min="2019-04-23"><br><br>
+ <label for="reg">Registration id:</label> <input type="text" name="" id="reg" required placeholder="Enter registration number" pattern="[0-9]{8}" title="Please enter correct id:"><br><br>
+ <label for="yesmale">Male:</label> <input type="radio" name="gender" value="male">
+ <label for="yesfemale">Female:</label> <input type="radio" name="gender" value="female">
+ <label for="yesother">Others:</label> <input type="radio" name="gender" value="other"><br><br>
+<label>Branch:</label>
+ <select id="br" >
+  <option></option>
+        <option>BCA</option>
+        <option>Btech.Cse</option>
+        <option>Btech.Ece</option>
+        <option>Btech.EEE</option>
+        <option>Btech.Mec</option>
+        <option>Btech.Civil</option>
+        <option>Btech.Aerospace</option>
+        <option>Diploma</option>
+        <option>Btech.Agriculture</option>
+        <option>MBA</option>
+        <option>Fashion design</option>
+        <option>Law</option>
+        <option>Polytechnic</option></select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>State</label>
+      <select id="st" name="state">
+        <option value=""></option>
+        <option value="punjab">Punjab</option>
+        <option value="bihar">Bihar</option>
+        <option value="andhra pradesh">Andhra pradseh</option>
+        <option value="kerala">Kerala</option>
+        <option value="karnatka">Karnatka</option>
+        <option value="haryana">Haryana</option>
+        <option value="maharashtra">Maharashtra</option>
+        <option value="telgana">Telgana</option>
+        <option value="west bengal">West Bengal</option>
+        <option value="jharkhand">Jharkhand</option>
+        <option value="uttar pradesh">Uttar pradesh</option>
+        <option value="madhya pardesh">Madhya pradesh</option>
+        <option value="rajasthan">Rajasthan</option>
+        <option value="sikkim">Sikkim</option>
+        <option value="tamil nadu">Tamil nadu</option>
+        <option value="jammu & kashmir">Jammu & kashmir</option>
+        <option value="delhi">Delhi</option>
+      </select><br><br>
+
+
+
+ <label>Hostel Type:</label>
+ <select name="type">
+   <option value=""></option>
+   <option value="boyshostel">Boy's Hostel</option>
+   <option value="girlshostel">Girl's Hostel</option>
+ </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <label>Hostel:</label>
+ <select name="">
+   <option value=""></option>
+   <option value="">BH-1</option>
+   <option value="">BH-2</option>
+   <option value="">BH-3</option>
+   <option value="">BH-4</option>
+   <option value="">BH-5</option>
+   <option value="">BH-6</option>
+   <option value="">BH-7</option>
+   <option value="">BH-8</option>
+   <option value="">GH-1</option>
+   <option value="">GH-2</option>
+   <option value="">GH-3</option>
+   <option value="">GH-4</option>
+   <option value="">GH-5</option>
+   <option value="">GH-6</option>
+ </select><br><br>
+ <label>Rooms:</label>
+ <select name="">
+   <option value=""></option>
+   <option value="">4-seater AC (₹65,000/yr)</option>
+   <option value="">4-seater Non-AC (₹55,000/yr)</option>
+   <option value="">3-seater AC (₹75,000/yr)</option>
+   <option value="">3-seater Non-AC (₹65,000/yr)</option>
+   <option value="">2-seater AC (₹85,000/yr)</option>
+   <option value="">2-seater Non-AC  (₹75,000/yr)</option>
+   <option value="">1-seater AC (₹1,05,000/yr)</option>
+   <option value="">1-seater Non-AC (₹85,000/yr)</option>
+   <option value="">8-seater AC (₹50,000/yr)</option>
+   <option value="">8-seater Non-AC (₹45,000/yr)</option>
+   <option value="">Dormitary Room(attached washroom) (₹45,000/yr)</option>
+   <option value="">Dormitary Room(not attached washroom) (₹40,000/yr)</option>
+ </select><br><br>
+ 
+  <p>Do you require Mess?</p>
+ <label for="yesMeals">YES:</label> <input type="radio" name="meals" value="yesMeals">
+ <label for="noMeals">NO:</label> <input type="radio" name="meals" value="noMeals">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label>Mess Type:</label>
+ <select name="">
+   <option value=""></option>
+   <option value="">Standard Food</option>
+   <option value="">South Indian</option>
+   <option value="">Skip-Meal</option></select><br><br>
+
+  <label for="balcony">Do you need Laundary Facility:</label><input type="checkbox" name="balcony" value="yes" checked>
+  <br>
+
+   <a href="cong.html" target="_blank"><input type="image"  name="Submit" src="Submit-Button.png" width="10%"   height="10%"></a>
+  
+  
+  </fieldset>
+</form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>front</title>
+  <!-- load an icon libraray -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+  <style type="text/css">
+  body{
+    background-image: url(IMG_5909.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+  }
+    .navbar {
+  
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to bottom left, #ccff66 0%, #000099 100%);
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #4CAF50;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 200px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  /*height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 0%;*/*/
+  /*display: inline-block;*/
+  /*transition: background-color 0.6s ease;*/
+}
+
+.active, .dot:hover {
+
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+  
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <!-- <a href="#"><i class="fa fa-fw fa-search"></i>Search </a> --> 
+  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+  <a href="login.html" target="_blank"><i class="fa fa-fw fa-user"></i> Login</a>
+  <a href="about.html"><i class=""></i> About</a>
+  <div class="dropdown">
+    <button class="dropbtn">More 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="feed.html">Feedback</a>
+      <a href="mess.html">Mess Food</a>
+      <a href="laundary.html">Laundary</a>
+      
+    </div>
+  </div> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="Picture2.jpg" width="10%" height="10%" alt="logo">
+
+
+</div>
+<br>
+
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="campus.jpg" style="width:100%">
+    <div class="text">Campus view</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="eat4.jpg" style="width:100%">
+    <div class="text">Mess</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="main gate.jpg" style="width:100%">
+    <div class="text">Security</div>
+  </div>
+   <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="1 (1).jpg" style="width:100%">
+    <div class="text">Rooms</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)">1</span> 
+  <span class="dot" onclick="currentSlide(2)">2</span> 
+  <span class="dot" onclick="currentSlide(3)">3</span>
+  <span class="dot" onclick="currentSlide(4)">4</span> 
+</div>
+<script type="text/javascript">
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+
+
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h2><strong><em> Features</em></strong></h2>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="wifi.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large"><u>Wifi Environment</u></span><br>
+        <span>Provide wi-fi 24x7 with an average speed of 2 MB/sec. </span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="water.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large"><u>24x7 Water Supply</u></span><br>
+        <span>Clean and Pure water is provided for good health of students.</span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="canteen.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large"><u>Canteen</u></span><br>
+        <span>Tasty and delicious food.All varities are available</span>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="Securitypage-ContentBlock2--photograph_848w477h.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large"><u>24x7 Security</u></span><br>
+        <span>High-tight security.So your wards are safe here.</span>
+      </li>  
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="download.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large"><u>Bus Facility</u></span><br>
+        <span>Also have bus (Ac or Non-Ac) for students.</span>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+ <!-- footer code -->
+<footer class="w3-padding-32 w3-black w3-center w3-margin-top">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+   <!--  <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  
+</footer>
+
+
+
+
+</body>
+</html>
